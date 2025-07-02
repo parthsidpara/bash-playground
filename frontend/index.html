@@ -24,7 +24,7 @@
       const outputEl = document.getElementById("output");
       outputEl.textContent = "Running...";
       try {
-        const res = await fetch("http://localhost:3000/run", {
+        const res = await fetch("https://bash-playground.onrender.com/run", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ code })
